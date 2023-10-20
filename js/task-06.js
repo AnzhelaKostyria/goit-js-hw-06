@@ -4,7 +4,7 @@ console.log(inputLength);
 input.addEventListener("blur", checkLength);
 
 function checkLength(event) {
-  if (event.currentTarget.value.length >= inputLength) {
+  if (event.currentTarget.value.length == inputLength) {
     input.classList.add("valid");
     input.classList.remove("invalid");
   } else {

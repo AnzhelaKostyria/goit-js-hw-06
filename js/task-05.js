@@ -3,5 +3,5 @@ const output = document.querySelector("#name-output");
 input.addEventListener("input", spanText);
 
 function spanText(event) {
-  output.textContent = event.currentTarget.value;
+  output.textContent = event.currentTarget.value || "Anonymous";
 }

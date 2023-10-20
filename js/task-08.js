@@ -12,7 +12,7 @@ function handleSubmit(event) {
   console.log(passwordForm);
   const formValue = {};
   if (emailForm === "" || passwordForm === "") {
-    return console.log("Please fill in all the fields!");
+    return alert("Всі поля повинні бути заповнені!");
   } else {
     formValue.email = emailForm;
     formValue.password = passwordForm;
